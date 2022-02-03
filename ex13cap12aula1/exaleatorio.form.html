@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExsAleatorios</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Criar uma nova conta</h1>
+    <form method="post"action="showform.php">
+        <fieldset>
+            <h2 class="account">Conta</h2>
+            <ul>
+                <li>
+                    <label for="first_name">Primeiro nome:</label>
+                    <input type="text"id="first_name" name="first_name"
+                    class="large"required="required"placeholder="Digite_seu_primeiro_nome">
+                    
+                </li>
+                <li>
+                    <label for="last_name">Ultimo nome:</label>
+                    <input type="text"id="last_name" name="last_name"class="large"
+                    required="required"placeholder="Digite_ultimo_nome">
+                    
+                </li>
+                <li>
+                    <label for="Email">Email</label>
+                    <input type="text"id=Email name="Email"class="large"
+                    required="required"autofocus="">
+                </li>
+            <div class='main'>
+
+                  <script>
+                        function confirmar () {
+                            var pwr = document.getElementById('pwr').value;
+                            var pwr2 = document.getElementById('pwr2').value;
+                           
+                            if( pwr == '' || pwr.length <= 5) {
+                                alert('preencha campo senha com no minimo 5 caracter');
+                                formuser.pwr.focus();
+                                return false;
+
+                            if( pwr2 == '' || pwr.length <= 5) {
+                               alert('preencha campo senha com no minimo 5 caracter');
+                               formuser.pwr.focus();
+                               return false;
+                            
+                           
+                            }
+                            if(pwr != pwr2) {
+                                alert('os dados não conferem');
+                                form1.pwr2.focus();
+                                return false;
+                            }
+                            
+
+                            
+                        }           
+                    }           
+                            
+                 </script>
+                <h1>Criar cadastro</h1>
+                <li>
+                    <label for="label">Senha</label>
+                    <input type="password"name="senha"id ="pwr" class="medim"
+                    required="required"size="n" maxlength="n"> 
+                    
+                </li>
+                <li>
+                    <label for="label">Confirme sua Senha</label>
+                    <input type="password"name="confirme senha"id="pwr2"class=""
+                    required="required"size="n"maxlenght="n">
+                    <button type="submit"onclick='confirmar()'>Enviar</button>
+                </li>
+            </div>
+                <input type="submit"class="create_profile">
+                
+            </ul>
+        </fieldset>=
+    </form>
+    <form method="post"action="script.url">
+        <fieldset>
+         <h2>Endereço</h2>  
+          <ul>
+              <li>
+                <label for="Endereço">Seu endereço</label>
+                <input type="text"id="Endereço"nome="Endereço"required="">
+                
+             </li>
+             <li>
+                 <label for="Cidade">Sua cidade</label>
+                 <input type="text"id="Cidade"nome="cidade">
+             </li>
+             <li>
+                 <label for="Estado"> Seu Estado</label>
+                 <input type="text" id= "Estado"nome="Estado"class="medium">
+             </li>
+              
+          </ul>
+        </fieldset>
+
+    </form>
+    <h2>Aprendendo mais um  novo</h2>
+    <p id="demo">Pagina seguinte</p>
+    <button type="button"onclick="document.getElementById('demo'). style.fontSize='40px';" >click aqui</button>
+    
+    <script>
+       function local(){
+           var Endereço
+       }
+    
+    </script>
+
+    
+</body>
+</html>

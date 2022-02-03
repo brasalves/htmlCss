@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação dos exercicios de ID</title>
+</head>
+<style>
+    body {
+        background-color: rgba(122, 107, 40, 0.342);
+    }
+    p {
+        background-color: rgb(175, 212, 195);
+    }
+</style>
+<body>
+    <h1>Formação de Quadrados pelo Canvas</h1>
+    <canvas id="meu canvas" width="450"
+    height="100"
+    style="border: 1px solid #161616; ">
+    </canvas>
+    <script>
+        var canvas=document.getElementById("meu canvas");
+        var ctx= canvas.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo (450,100);
+        ctx.stroke();
+    </script>
+    <p id="demo"></p>
+    <script>
+        var x ;
+        x = 5  ;
+        document.getElementById('demo').innerHTML = x*10;
+    </script>
+    <p id='demo'></p>
+    <script>
+        var preço = 5;var preço1 = 6;
+        var total = preço+ preço1;
+        document.getElementById('demo').
+        innerHTML= `valores ${preço} e ${preço1} e igual ${total}`
+
+    </script>
+     <p id="demo">Hello World</p>
+     <button onclick="myfunction()">Try it</button>
+    <script>
+         
+             function myfunction(){
+             let text = document.getElementById("demo").innerHTML;
+             document.getElementById("demo").innerHTML=text.toUpperCase();
+        }
+
+    </script>
+    <button onclick="document.getElementById('demo').
+    innerHTML=Date()">What time is it?
+    </button> 
+    <button onclick='this.innerHTML=Date()'>What time is it</button>
+</body>
+    
+   
+    </script>
+    <p style="font-style: italic;">
+    Voltar a <a href="man.ID.html">  página incial</a>
+    </p> 
+    <p id="demo">Good Evening!</p>
+    <script>
+        if(new Date ().getHours() < 18) {
+            document.getElementById('demo').innerHTML="Good day"
+        } else{document.getElementById('demo').innerHTML="Good Evening"}
+    </script>
+    
+</body>
+</html>
+

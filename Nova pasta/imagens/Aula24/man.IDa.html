@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação dos exercicios de ID</title>
+</head>
+<style>
+    body {
+        background-color: rgba(87, 214, 125, 0.342);
+    }
+    p {
+        background-color: rgba(188, 233, 179, 0.986);
+    }
+</style>
+<body>
+    <canvas id="meu canvas" width="200"
+    height="100"
+    style="border: 1px solid #161616; ">
+    </canvas>
+    <script>
+        var canvas=document.getElementById("meu canvas");
+        var ctx= canvas.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo (200,100);
+        ctx.stroke();
+    </script>
+
+    <canvas id="meu canvas" width="200"
+    height="100"
+    style="border: 1px solid #161616; ">
+    </canvas> 
+    
+    <script>
+        var canvas=document.getElementById("meu canvas");
+        var ctx= canvas.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+    </script>
+
+    <h2>Exercicios de ID</h2>
+
+    <p>Esta pagina fala sobre a lista de<b> sentenças </b>
+        a ser executada
+    </p>
+    <p>Show de bola</p>
+    <p id="demo"></p>
+    <script>
+        let x,y,z;
+        X= 5 ;
+        Y= 6 ;
+        Z= X + Y;
+        document.getElementById("demo").
+        innerHTML= `A soma entre ${X} e ${Y} e igual ${Z}`
+    </script>
+   <p style="padding: 3px;font-size: larger; color:rgba(148, 16, 16, 0.664)">
+   Ir para<a href="man.IDb.html">  página 2</a>
+   </p> 
+
+    <script> 
+        let text ="";let i =0;
+        while(i < 6){ 
+            text += "<br>o numero e"  + i; i++ ;
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+    
+</body>
+</html>
+

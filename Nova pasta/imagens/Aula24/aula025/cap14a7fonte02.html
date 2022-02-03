@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face{
+            font-family: 'love';
+            src: url('love larry.otf')format('opentype'),url('love larry .ttf')
+            format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            
+            /*
+             tipos de formato()
+             -opentype  (otf)
+             -truetype  (ttf)
+             -embeded-opentype
+             -truetype-aat(apple advenced typgrafphy)
+             -syg
+             */
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(255, 217, 0, 0.568);
+        }
+        h1{
+            font-family: 'Love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+            color: cornflowerblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ola tudo bem ?</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+        elit. Fuga suscipit vero saepe repellendus velit 
+        nulla sequi atque repellat dolor rerum, nisi
+         voluptate illo numquam 
+        dicta similique fugit est natus quia?
+    </p>
+    <h1>Vamos Iniciar ?</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+         elit. Delectus, inventore soluta aliquam nostrum 
+         rerum quisquam odio illo unde accusamus ipsum quis 
+         quod beatae at ipsa quasi tempora vero aliquid.
+        Cupiditate!
+    </p>
+    
+    
+    
+    <button type="button"onclick='document.write ='braz''>click aqui</button>
+    
+
+    <p id='demo'></p>
+    <script>
+    let x ,r,z;
+    x = 3+4;
+    r = 234;
+    z = x/r
+    document.getElementById('demo').innerHTML=` O soma de ${x} e ${r} e ${z}`
+
+    </script>
+    <p id='demo1'></p>
+    <script>
+      let d = minhafunção (3,67);
+      document.getElementById('demo1').innerHTML=d;
+      function minhafunção(e,g){
+          return e+g;
+      }
+    </script>
+    <p id= "bra"></p>
+    <script>
+        let w = valores_www(23,1221);
+        document.getElementById("bra").innerHTML=w;
+        function valores_www (d,a){
+            return d/a;
+        }
+    </script>
+
+    <p id="demo2"></p>
+
+    <script>
+        let u =  minha_media(2, 4, 8);
+        document.getElementById("demo2").innerHTML= u;
+        function minha_media(m,k,f) {
+            return(m+k+f)/3;
+        }
+    </script>
+
+    <p id="der"></p>
+
+    <script>
+        function toCelsius (f) {
+            return (5/9) * (f-32);
+        }
+        document.getElementById("der").innerHTML= toCelsius(70);
+    </script>
+    <p id ="demo3"></p>
+    
+    <script>
+        let text="kjkkfjkjncxnxsdidjjvnvmcnmcvjisjxcbriuefb7845";
+        document.getElementById("demo3").innerHTML=text.length;
+    </script>
+</body>
+</html>
+
+
+
